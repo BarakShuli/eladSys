@@ -1,0 +1,6 @@
+<select id="drpCurrency" name="drpCurrency" (change)="setSelectedCurrency($event)" [(ngModel)]="selectedValue">
+  <option value="select">select</option>
+  <option *ngFor="let item of currencyList[0].quotes" [value]="[item.currencyName,item.value]">
+      {{currencyList[1][item.currencyName] + " - " + item.currencyName }} 
+  </option>
+</select>

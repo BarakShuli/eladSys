@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  getCurrencyQuotesList: "http://www.apilayer.net/api/live?access_key=4c89a7ccf75fcf1984783a2b23a7d6c2"
 };
 
 /*

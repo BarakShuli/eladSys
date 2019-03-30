@@ -1,0 +1,46 @@
+#container {
+	text-align: right;
+	direction: rtl;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	
+	table {
+		thead {
+			th {
+				label {
+					margin:0 10px 0 0;
+				}
+			}
+		}
+	}
+
+	#switchIcon {
+		width:20px;
+		height:20px;
+		cursor:pointer;
+	}
+
+	#resultContainer {
+		width: 100vw;
+    text-align: center;
+		margin: 20px 0 0;
+		direction: ltr;
+	}
+
+	input:focus {
+		outline: 0;
+	}
+
+	#txtAmmount {
+		border:solid 1px gray;
+		border-radius: 10px;
+		width:150px;
+		height: 20px;
+		padding:0 10px 0 0;
+	}
+	
+	#btnConvert {
+		width:100%;
+		cursor: pointer;
+	}
+}

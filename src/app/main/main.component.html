@@ -1,0 +1,37 @@
+<div id="container">
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th><label>ממטבע</label></th>
+        <th></th>
+        <th><label>למטבע</label></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <input type="number" id="txtAmmount" [(ngModel)]="txtAmmount">
+        </td>
+        <td>
+          <app-currency-dropdown (selectedCurrency)="setSelectedFromCurrency($event)" selectedValue="{{drpFromCurrencySelected}}"></app-currency-dropdown>
+        </td>
+        <td>
+            <img id="switchIcon" src="assets/switchIcon.png" (click)="switchCurrency()">
+        </td>
+        <td>
+          <app-currency-dropdown (selectedCurrency)="setSelectedToCurrency($event)" selectedValue="{{drpToCurrencySelected}}"></app-currency-dropdown>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <button id="btnConvert" (click)="doConvert()" [disabled]="!isValidConvertion()">חשב</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div id="resultContainer"></div>
+
+
+</div>

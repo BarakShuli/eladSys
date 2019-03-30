@@ -1,0 +1,20 @@
+
+	select:focus {
+		outline: 0;
+	}
+
+	select {
+		height: 25px;
+		border-radius: 10px;
+		width:200px;
+		direction: rtl;
+		padding: 0 5px 0 0;
+
+		option {
+			direction: rtl;
+			.currencyName {
+				font-weight: bold;
+				color:red;
+			}
+		}
+	}
